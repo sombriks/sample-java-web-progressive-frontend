@@ -6,3 +6,13 @@ gradlew
 
 # Ignore Gradle build output directory
 build
+
+# Ignore eclipse/vscode config files and directories
+.classpath
+.project
+.settings
+bin
+
+# Ignore intellij config files and directories
+out
+.idea

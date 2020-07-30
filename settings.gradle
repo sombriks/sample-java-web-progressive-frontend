@@ -7,4 +7,7 @@
  * in the user manual at https://docs.gradle.org/6.5.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'Sample Java Web Project With Progressive Frontend'
+rootProject.name = 'sample-java-web-progressive-frontend'
+
+include 'my-library-project'
+include 'my-web-project'
