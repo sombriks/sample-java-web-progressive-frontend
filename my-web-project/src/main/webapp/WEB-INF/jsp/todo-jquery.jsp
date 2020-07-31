@@ -7,5 +7,6 @@
 <body>
 <h1>Sample TODO list with jQuery</h1>
 <a href="todo">Back</a>
+<script src="js/todo-jquery.js"></script>
 </body>
 </html>
