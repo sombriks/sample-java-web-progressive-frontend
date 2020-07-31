@@ -1,10 +1,17 @@
 package sample.library;
 
+import java.util.Date;
+
 public class TodoItem {
 
     private long id;
     private String description;
     private boolean done;
+
+    public TodoItem(String description) {
+        this.id = new Date().getTime();
+        this.description = description;
+    }
 
     public long getId() {
         return id;

@@ -1,7 +1,5 @@
 package sample.web;
 
-import sample.library.Dados;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
