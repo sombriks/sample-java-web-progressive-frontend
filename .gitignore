@@ -16,3 +16,6 @@ bin
 # Ignore intellij config files and directories
 out
 .idea
+
+# Ignore netbeans
+nb-configuration.xml

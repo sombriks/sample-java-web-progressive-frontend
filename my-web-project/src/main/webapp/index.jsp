@@ -1,1 +1,1 @@
-<jsp:forward page="/inicio"/>
+<jsp:forward page="/todo"/>
