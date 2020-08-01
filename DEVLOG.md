@@ -20,3 +20,5 @@ Added the no-script approach in order to get that 1998-2003 feeling.
 
 Added [gradle cargo plugin](https://github.com/bmuschko/gradle-cargo-plugin/blob/master/README.md)
 to choose any ide/editor and still be able to deploy on development
+
+Cleanups
