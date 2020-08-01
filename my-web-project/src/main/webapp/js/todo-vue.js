@@ -1,4 +1,4 @@
-new Vue({
+window.todoVm = new Vue({
     data: {
         description: "",
         items: []
