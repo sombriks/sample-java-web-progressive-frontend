@@ -4,6 +4,8 @@ Proof of concept regarding transitional ways from jsp/jquery to jsp/vue
 and SPA/vue.
 An intermediate step intended to get acquainted with reactive frontends.
 
+![sample-todo.png](sample-todo.png)
+
 ## what do i need to build this
 
 - Java 8 or 11, maybe newer
