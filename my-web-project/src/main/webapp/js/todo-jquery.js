@@ -2,6 +2,8 @@ function list() {
     $(".clone").remove()
     $.ajax("todo-json", {
         success: function (data) {
+            if(!data.items.length)
+                $("#parent").append("<h2 class='clone'>No available tasks</h2>")
             $.each(data.items, function (idx, item) {
                 var todo = $("#_template").clone()
                 todo.addClass("clone");

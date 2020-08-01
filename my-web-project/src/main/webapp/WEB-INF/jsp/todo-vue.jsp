@@ -43,6 +43,7 @@
                     </div>
                 </div>
             </div>
+            <h2 v-if="!items.length">No available tasks</h2>
         </div>
     </section>
 </div>

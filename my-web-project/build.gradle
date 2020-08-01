@@ -1,6 +1,7 @@
 
 plugins {
   id 'war'
+  id 'com.bmuschko.cargo' version '2.7.1'
 }
 
 dependencies {
@@ -13,3 +14,24 @@ dependencies {
   testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
   testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
 }
+
+cargo {
+  containerId = 'tomcat9x'
+
+  deployable {
+    context = '/'
+  }
+
+  local {
+    logLevel = 'high'
+    jvmArgs = ''
+    installer {
+      installUrl = 'https://downloads.apache.org/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.zip'
+      downloadDir = file("$buildDir/download")
+      extractDir = file("$buildDir/extract")
+    }
+  }
+}
+
+cargoRunLocal.dependsOn war
+cargoRedeployLocal.dependsOn war
